@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Welcome to School, Inc</title>
+</head>
+
+<body>
+    <h1>School, Inc.</h1>
+
+    <div id="login">
+        <p>
+            Enter Student Code: <input type="text" id="student-code" value="">
+            <input type="button" id="submit-code" value="Verify">
+        </p>
+    </div>
+    <div id="success-login" style="display:none;">
+        <h2>Welcome <span id="student-name"></span></h2>
+        <p><input type="button" id="logout" value="Logout"></p>
+    </div>
+
+    <div id="content" style="display:none">
+        <h3>Selected Courses</h3>
+        <table>
+            <thead>
+                <th>Course</th>
+                <th>Description</th>
+                <th>Time</th>
+                <th>&nbsp;</th>
+            </thead>
+            <tbody id="selected-courses"></tbody>
+        </table>
+
+        <h3>Available Courses</h3>
+        <table>
+            <thead>
+                <th>Course</th>
+                <th>Description</th>
+                <th>Time</th>
+                <th>&nbsp;</th>
+            </thead>
+            <tbody id="available-courses"></tbody>
+        </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./school.js"></script>
+    <script>
+        /* Contains relevant and temporary info about the current student */
+        var STUDENT = {};
+        $(document).ready(School.initialize);
+    </script>
+</body>
+</html>
+
