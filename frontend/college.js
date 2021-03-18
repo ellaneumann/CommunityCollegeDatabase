@@ -1,4 +1,4 @@
-var School = (() => {
+var College = (() => {
     let initialize = () => {
         /* Create Events */
         $('#submit-code').on('click', handleLogin);
@@ -12,12 +12,10 @@ var School = (() => {
      * Example { endPoint: '/student/1', method: 'GET' }
     */
     let queryAPI = (opts) => {
-        /* Returns the standard ajax promise object, use .then() and .fail()
-         * to handle it in your calling function/method
-         */
+        // Returns the standard AJAX promise object
         let ajaxOpts = {};
 
-        /* This is standard AJAX "stuff", define the object containing
+        /* standard AJAX, define the object containing
          * the information to pass to the Python process..
          */
         ajaxOpts = {
@@ -71,7 +69,7 @@ var School = (() => {
                 courses.forEach(element => {
                     let ampmTime = prettyTime(element.course_time)
                     $('#selected-courses').append(
-                        `<tr><td>${element.course_code}</td><td>${element.course_name}</td><td>${ampmTime}</td><td><input type="button" value="Remove" onclick="School.handleCourse(this)" data-action-id="remove" data-course-id="${element.course_id}"></td></tr>`);
+                        `<tr><td>${element.course_code}</td><td>${element.course_name}</td><td>${ampmTime}</td><td><input type="button" value="Remove" onclick="College.handleCourse(this)" data-action-id="remove" data-course-id="${element.course_id}"></td></tr>`);
                     STUDENT.courses.push(element.course_id);
                 });
                 showCourses();
@@ -95,7 +93,7 @@ var School = (() => {
                     }
                     let ampmTime = prettyTime(element.course_time);
                     $('#available-courses').append(
-                        `<tr><td>${element.course_id}</td><td>${element.name}</td><td>${ampmTime}</td><td><input type="button" value="Add" onclick="School.handleCourse(this)" data-action-id="add" data-course-id="${element.id}" ${buttonState}></td></tr>`);
+                        `<tr><td>${element.course_id}</td><td>${element.name}</td><td>${ampmTime}</td><td><input type="button" value="Add" onclick="College.handleCourse(this)" data-action-id="add" data-course-id="${element.id}" ${buttonState}></td></tr>`);
                 });
             } else {
                 alert('Courses Not Found. Please Try Again Later.');
@@ -115,6 +113,10 @@ var School = (() => {
         });
     };
 
+    /* 
+     * prettyTime:
+     * Makes the course times show up in human readable clock time
+    */
     let prettyTime = (minutes) => {
         let ampm = '';
         let min = Math.floor(Math.abs(minutes));

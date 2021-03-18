@@ -11,7 +11,7 @@ app = Flask(__name__)
 # allows overcoming of Cross Origin.
 CORS(app)
 # Location of our SQLITE DB
-DATABASE = '/Users/ellaneumann/Desktop/Ella-Tutor/backend/db/school.db'
+DATABASE = '/Users/ellaneumann/Desktop/CommunityCollegeDatabase/backend/db/college.db'
 
 
 def get_db():
@@ -49,7 +49,7 @@ def close_connection(exception):
 
 
 def query_db(query, args=(), one=False):
-    """ this is the "query" function that off of our API methods
+    """ this is the "query" function that off of the API methods
         will call to retrieve information from the DB, also
         part of Flask's best practices when working with SQLite
     """
@@ -60,7 +60,7 @@ def query_db(query, args=(), one=False):
 
 
 def update_db(query, args=()):
-    """ Use this method when updating (or deleting) records,
+    """ Method used when updating (or deleting) records,
         it functions similar to the "query_db" method above
         but with 2 main differences:
         1 - There is no return value
@@ -77,7 +77,7 @@ def index():
     """ This returns when accessing the API as http://[api]/
         Just return a simple message
     """
-    return jsonify({'message': 'SCHOOL API v1.0'})
+    return jsonify({'message': 'COLLLEGE API v1.0'})
 
 
 @app.route('/students')
