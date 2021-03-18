@@ -9,8 +9,8 @@ How to run the program:
 DATABASE = 'whereverLocated/CommunityCollegeDatabase/backend/db/college.db'
 3) cd into CommunityCollegeDatabase/backend and create a virtual environment and activate the virtual environment
 4) In the virtual environment, pip install flask and flask_cors
-5) While in the backend folder and virtual environment, type into your terminal python app.py. Keep app.py running while using the student registration system. If you run into any problems running app.py, take a look at requirements.txt in the backend folder.
-6) Move the index.html file into your browser
+5) While in the backend folder and running your virtual environment, type into your terminal python app.py. Keep app.py running while using the student registration system. If you run into any problems running app.py, take a look at requirements.txt in the backend folder.
+6) Move the index.html file from the frontend folder into your browser
 7) Use a student_code to log into a student account. 
 Choose from the following student codes or create your own in the college database college.db:
     - RACHELLEE (cooresponds to student Rachel Lee, ID: 2, email: leer@college.edu)
