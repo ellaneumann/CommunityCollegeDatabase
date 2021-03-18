@@ -5,7 +5,7 @@ NOTE: At this time, no unit tests have been created due to the time scope of thi
 
 How to run the program:
 1) Clone repo and navigate to the folder in your terminal
-2) In app.py in the backend folder, change the file path on line 14 to configure to your computer
+2) In app.py in the backend folder, change the file path on line 15 to configure to your computer
 DATABASE = 'whereverLocated/CommunityCollegeDatabase/backend/db/college.db'
 3) cd into CommunityCollegeDatabase/backend and create a virtual environment and activate the virtual environment
 4) In the virtual environment, pip install flask and flask_cors

@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)
 # Location of our SQLITE DB
 # Please change the file path to match the config on your computer
-DATABASE = '/Users/ellaneumann/Desktop/CommunityCollegeDatabase/backend/db/college.db'
+DATABASE = 'yourFilePath/Desktop/CommunityCollegeDatabase/backend/db/college.db'
 
 
 def get_db():
