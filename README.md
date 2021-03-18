@@ -14,7 +14,7 @@ DATABASE = 'whereverLocated/CommunityCollegeDatabase/backend/db/college.db'
 7) Use a student_code to log into a student account. 
 Choose from the following student codes or create your own in the college database college.db:
     - RACHELLEE (cooresponds to student Rachel Lee, ID: 2, email: leer@college.edu)
-    - ELLANEUMANN (cooresponds to student Ella Neumann, ID: 3, email: neumanne@college.edu)
+    - JESSEMILES (cooresponds to student Jesse Miles, ID: 3, email: milesj@college.edu)
     - JILLHAZE (cooresponds to student Jill Hazel, ID: 4, email: hazej@college.edu)
     - SOPHIAGILBERT (cooresponds to student Sophia Gilbert, ID: 5, email: gilberts@college.edu)
     - MAXHART (cooresponds to student Max Hart, ID: 6, email: hartm@college.ewu)
