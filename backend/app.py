@@ -11,6 +11,7 @@ app = Flask(__name__)
 # allows overcoming of Cross Origin.
 CORS(app)
 # Location of our SQLITE DB
+# Please change the file path to match the config on your computer
 DATABASE = '/Users/ellaneumann/Desktop/CommunityCollegeDatabase/backend/db/college.db'
 
 
